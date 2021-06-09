@@ -1,0 +1,127 @@
+:root{
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body{
+  background-color: var(--Dark-cyan);
+  position: relative;
+  font-size: 18px;
+  font-family: "Kumbh Sans",sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.card{
+  background-color: #fff;
+  border-radius: 10px;
+  height: 350px;
+  width:300px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-banner{
+  background: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 90px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pic{
+  margin-top: -2rem;
+  border: 5px solid #fff;
+  border-radius: 50px;
+}
+
+h2{
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  }
+
+.age{
+  padding-left: .5rem;
+  color: hsl(0, 0%, 59%);
+}
+
+h3{
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 59%);
+}
+
+.stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top: 1px solid var(--Dark-gray);
+  font-family: "Kumbh Sans",sans-serif;
+}
+
+.stat-num{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: hsl(229, 23%, 23%);
+}
+
+.stat-para{
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--Dark-gray);
+}
+
+.bg-image .bg-top, .bg-image .bg-bottom{
+  position: absolute;
+}
+
+.bg-image .bg-top{
+  width: 800px;
+  top: -400px;
+  left: -100px;
+}
+
+.bg-image .bg-bottom{
+  width: 800px;
+  bottom: -400px;
+  right: -100px;
+}
+
+@media screen and (max-width: 950px){
+  .bg-image .bg-top{
+    width: 500px;
+    top: -200px;
+    left: -300px;
+  }
+
+  .bg-image .bg-bottom{
+    width: 500px;
+    bottom: -200px;
+    right: -300px;
+  }
+
+}
