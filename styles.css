@@ -38,7 +38,7 @@ body{
 }
 
 .profile-banner{
-  background: url('images/bg-pattern-card.svg');
+  background: url("images/bg-pattern-card.svg");
   background-size: cover;
   height: 90px;
   border-top-left-radius: 10px;
